@@ -1,0 +1,3048 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-09T08:26:35.506341+00:00",
+  "domain": "ynu.ac.jp",
+  "scope": "public web links from official pages; not an exhaustive DNS zone inventory",
+  "dns_resolver": "system resolver used by dig",
+  "ranges": [
+    {
+      "cidr": "133.34.0.0/16",
+      "organization": "Yokohama National University",
+      "network_name": "YNUNET",
+      "source": "https://whois.nic.ad.jp/cgi-bin/whois_gw?key=133.34.0.0&submit=query",
+      "verified_at": "2026-10-09T08:26:35.506356+00:00"
+    }
+  ],
+  "ipv6_range_status": "university allocation not verified; AAAA addresses still recorded",
+  "discovery_pages": [
+    {
+      "url": "https://www.ynu.ac.jp/",
+      "final_url": "https://www.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.ynu.ac.jp/about/link/",
+      "final_url": "https://www.ynu.ac.jp/about/link/",
+      "status": "ok"
+    },
+    {
+      "url": "https://itsc.ynu.ac.jp/",
+      "final_url": "https://itsc.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.lib.ynu.ac.jp/",
+      "final_url": "https://www.ynu.ac.jp/lib/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.cba.ynu.ac.jp/",
+      "final_url": "https://www.ynu.ac.jp/cba/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.cus.ynu.ac.jp/",
+      "final_url": "https://www.cus.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.econ.ynu.ac.jp/",
+      "final_url": "https://www.econ.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.edu.ynu.ac.jp/",
+      "final_url": "https://www.edu.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.eis.ynu.ac.jp/",
+      "final_url": "https://www.eis.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.es.ynu.ac.jp/",
+      "final_url": "https://www.es.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.fse.ynu.ac.jp/",
+      "final_url": "https://www.fse.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.gakuseisupport.ynu.ac.jp/",
+      "final_url": "https://www.gakuseisupport.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.gsedu.ynu.ac.jp/",
+      "final_url": "https://www.gsedu.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.gsiss.ynu.ac.jp/",
+      "final_url": "https://www.gsiss.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.kamakurasho.ynu.ac.jp/",
+      "final_url": "https://www.kamakurasho.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.kansa.ynu.ac.jp/",
+      "final_url": "https://www.kansa.ynu.ac.jp/learning/login/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.ripo.ynu.ac.jp/",
+      "final_url": "https://www.ripo.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.urban.ynu.ac.jp/",
+      "final_url": "https://www.urban.ynu.ac.jp/",
+      "status": "ok"
+    },
+    {
+      "url": "https://www.whystudyat.ynu.ac.jp/",
+      "final_url": "https://www.whystudyat.ynu.ac.jp/",
+      "status": "ok"
+    }
+  ],
+  "hosts": [
+    {
+      "hostname": "aerospace.ynu.ac.jp",
+      "sources": [
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.864873+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "aerospace.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "chem.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.865105+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "chem.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "cse.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.865194+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "cse.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "cvg.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.865455+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "cvg.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "diversity.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.898200+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "diversity.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ece.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.898291+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ece.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "eduss.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.899056+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "eduss.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "es100anniv.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.913416+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "es100anniv.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "future-cities.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.926661+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "future-cities.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "fuyou.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.928708+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "fuyou.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "global.ynu.ac.jp",
+      "sources": [
+        "https://www.cba.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.932138+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "global.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "humansocial.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.943681+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "humansocial.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ias.ynu.ac.jp",
+      "sources": [
+        "https://www.ripo.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.958405+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ias.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ims.ynu.ac.jp",
+      "sources": [
+        "https://www.ripo.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.962420+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ims.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "isc.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.976161+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "isc.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "itsc.ynu.ac.jp",
+      "sources": [
+        "https://itsc.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.lib.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.980561+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "itsc.ynu.ac.jp",
+              "ttl": 607,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 607,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "kamachu.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.991207+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "kamachu.ynu.ac.jp",
+              "ttl": 2351,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 2351,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "kenkyuin-eis.ynu.ac.jp",
+      "sources": [
+        "https://www.eis.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:34.994976+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "kenkyuin-eis.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "koyukai.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.001967+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "koyukai.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "lms.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.008211+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "lms.ynu.ac.jp",
+              "ttl": 1508,
+              "type": "CNAME",
+              "value": "lmsweb.ynu.ac.jp"
+            },
+            {
+              "name": "lmsweb.ynu.ac.jp",
+              "ttl": 3213,
+              "type": "A",
+              "value": "133.162.76.130"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "lms.ynu.ac.jp",
+              "ttl": 1508,
+              "type": "CNAME",
+              "value": "lmsweb.ynu.ac.jp"
+            }
+          ]
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.76.130",
+          "family": 4,
+          "ttl": 3213,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [
+        "lmsweb.ynu.ac.jp"
+      ],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "mech.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.018484+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "mech.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ms-es.ynu.ac.jp",
+      "sources": [
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.024703+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ms-es.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "opac.lib.ynu.ac.jp",
+      "sources": [
+        "https://www.lib.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.028524+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "opac.lib.ynu.ac.jp",
+              "ttl": 2431,
+              "type": "CNAME",
+              "value": "opac.lib.ynu.ac.jp2.scutum.jp"
+            },
+            {
+              "name": "opac.lib.ynu.ac.jp2.scutum.jp",
+              "ttl": 196,
+              "type": "A",
+              "value": "133.130.50.45"
+            },
+            {
+              "name": "opac.lib.ynu.ac.jp2.scutum.jp",
+              "ttl": 196,
+              "type": "A",
+              "value": "133.110.250.133"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "opac.lib.ynu.ac.jp",
+              "ttl": 195,
+              "type": "CNAME",
+              "value": "opac.lib.ynu.ac.jp2.scutum.jp"
+            }
+          ]
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.110.250.133",
+          "family": 4,
+          "ttl": 196,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        },
+        {
+          "ip": "133.130.50.45",
+          "family": 4,
+          "ttl": 196,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [
+        "opac.lib.ynu.ac.jp2.scutum.jp"
+      ],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "phys.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.035955+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "phys.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "process.ynu.ac.jp",
+      "sources": [
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.051243+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NXDOMAIN",
+          "records": []
+        },
+        {
+          "type": "AAAA",
+          "status": "NXDOMAIN",
+          "records": []
+        }
+      ],
+      "addresses": [],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "pste.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.054724+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "pste.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "rcdm.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.055609+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "rcdm.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "risyu.jmk.ynu.ac.jp",
+      "sources": [
+        "https://www.lib.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.098587+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "risyu.jmk.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "CNAME",
+              "value": "Gakumu01-sys.jmk.ynu.ac.jp"
+            },
+            {
+              "name": "Gakumu01-sys.jmk.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.34.184.6"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "risyu.jmk.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "CNAME",
+              "value": "Gakumu01-sys.jmk.ynu.ac.jp"
+            }
+          ]
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.34.184.6",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [
+            "133.34.0.0/16"
+          ],
+          "university_range_match": true,
+          "global": true
+        }
+      ],
+      "cnames": [
+        "Gakumu01-sys.jmk.ynu.ac.jp"
+      ],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "rms.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.100689+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "rms.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "safety.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.116704+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "safety.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "sangaku.ynu.ac.jp",
+      "sources": [
+        "https://www.ripo.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.131709+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "sangaku.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "sdgs.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.137390+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "sdgs.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "shp.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.143866+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "shp.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "somu-jinji.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.149900+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "somu-jinji.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "somu-somu.ynu.ac.jp",
+      "sources": [
+        "https://itsc.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.170428+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "somu-somu.ynu.ac.jp",
+              "ttl": 2065,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 2065,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.b.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.174804+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.b.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.bio.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.180528+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.bio.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cap.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.193880+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.cap.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cba.ynu.ac.jp",
+      "sources": [
+        "https://www.cba.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.199988+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.cba.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cecba.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.208883+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NXDOMAIN",
+          "records": []
+        },
+        {
+          "type": "AAAA",
+          "status": "NXDOMAIN",
+          "records": []
+        }
+      ],
+      "addresses": [],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.chem-life.ynu.ac.jp",
+      "sources": [
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.221221+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.chem-life.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.chiiki.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.223644+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.chiiki.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cseg.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.227969+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NXDOMAIN",
+          "records": []
+        },
+        {
+          "type": "AAAA",
+          "status": "NXDOMAIN",
+          "records": []
+        }
+      ],
+      "addresses": [],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cst.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.253707+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.cst.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.cus.ynu.ac.jp",
+      "sources": [
+        "https://www.cus.ynu.ac.jp/",
+        "https://www.urban.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.253969+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.cus.ynu.ac.jp",
+              "ttl": 3598,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3598,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.econ.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.259122+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.econ.ynu.ac.jp",
+              "ttl": 3598,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3598,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.economics.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.261483+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.economics.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.edu-design.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.268981+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.edu-design.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.edu.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.283820+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.edu.ynu.ac.jp",
+              "ttl": 3598,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3598,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.eis.ynu.ac.jp",
+      "sources": [
+        "https://www.cus.ynu.ac.jp/",
+        "https://www.eis.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.290732+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.eis.ynu.ac.jp",
+              "ttl": 2383,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 2383,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.es.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.293452+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.es.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.fse.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.301632+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.fse.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.gakuseisupport.ynu.ac.jp",
+      "sources": [
+        "https://www.cus.ynu.ac.jp/",
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/",
+        "https://www.gakuseisupport.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.311488+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.gakuseisupport.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.gsedu.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.313863+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.gsedu.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.gsiss.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.316255+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.gsiss.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.hoken.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.322660+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.hoken.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.iblaw.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.329487+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.iblaw.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.kamakurasho.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.kamakurasho.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.334833+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.kamakurasho.ynu.ac.jp",
+              "ttl": 2574,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 2574,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.kansa.ynu.ac.jp",
+      "sources": [
+        "https://www.kansa.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.335796+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.kansa.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.lib.ynu.ac.jp",
+      "sources": [
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.lib.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.353985+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.lib.ynu.ac.jp",
+              "ttl": 3475,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3475,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.ls.ynu.ac.jp",
+      "sources": [
+        "https://www.gsiss.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.355729+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.ls.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.materep.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.358879+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.materep.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.ms.ynu.ac.jp",
+      "sources": [
+        "https://www.es.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.360000+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.ms.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.ripo.ynu.ac.jp",
+      "sources": [
+        "https://www.fse.ynu.ac.jp/",
+        "https://www.ripo.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.368257+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.ripo.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.safety.ynu.ac.jp",
+      "sources": [
+        "https://www.cus.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.386806+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NXDOMAIN",
+          "records": []
+        },
+        {
+          "type": "AAAA",
+          "status": "NXDOMAIN",
+          "records": []
+        }
+      ],
+      "addresses": [],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.urban.ynu.ac.jp",
+      "sources": [
+        "https://www.cus.ynu.ac.jp/",
+        "https://www.urban.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.387728+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.urban.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.whystudyat.ynu.ac.jp",
+      "sources": [
+        "https://www.whystudyat.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.391065+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.whystudyat.ynu.ac.jp",
+              "ttl": 3599,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3599,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.ygsc-studio.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.402321+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NXDOMAIN",
+          "records": []
+        },
+        {
+          "type": "AAAA",
+          "status": "NXDOMAIN",
+          "records": []
+        }
+      ],
+      "addresses": [],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "www.ynu.ac.jp",
+      "sources": [
+        "https://itsc.ynu.ac.jp/",
+        "https://www.cba.ynu.ac.jp/",
+        "https://www.cus.ynu.ac.jp/",
+        "https://www.econ.ynu.ac.jp/",
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.es.ynu.ac.jp/",
+        "https://www.fse.ynu.ac.jp/",
+        "https://www.gakuseisupport.ynu.ac.jp/",
+        "https://www.gsedu.ynu.ac.jp/",
+        "https://www.gsiss.ynu.ac.jp/",
+        "https://www.lib.ynu.ac.jp/",
+        "https://www.ripo.ynu.ac.jp/",
+        "https://www.urban.ynu.ac.jp/",
+        "https://www.whystudyat.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.404857+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.ynu.ac.jp",
+              "ttl": 1,
+              "type": "CNAME",
+              "value": "z60iqlfd.user.webaccel.jp"
+            },
+            {
+              "name": "z60iqlfd.user.webaccel.jp",
+              "ttl": 1,
+              "type": "CNAME",
+              "value": "site-112800294179.gslb1.sakura.ne.jp"
+            },
+            {
+              "name": "site-112800294179.gslb1.sakura.ne.jp",
+              "ttl": 1,
+              "type": "A",
+              "value": "133.167.31.1"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "www.ynu.ac.jp",
+              "ttl": 1,
+              "type": "CNAME",
+              "value": "z60iqlfd.user.webaccel.jp"
+            },
+            {
+              "name": "z60iqlfd.user.webaccel.jp",
+              "ttl": 1,
+              "type": "CNAME",
+              "value": "site-112800294179.gslb1.sakura.ne.jp"
+            }
+          ]
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.167.31.1",
+          "family": 4,
+          "ttl": 1,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [
+        "site-112800294179.gslb1.sakura.ne.jp",
+        "z60iqlfd.user.webaccel.jp"
+      ],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ygsc-studio.ynu.ac.jp",
+      "sources": [
+        "https://www.urban.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.410883+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ygsc-studio.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ynu-rc.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.418149+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ynu-rc.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ynuifgs.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.432043+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ynuifgs.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "ynus.ynu.ac.jp",
+      "sources": [
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.434675+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "ynus.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "yokochu.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.440524+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "yokochu.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    },
+    {
+      "hostname": "yokosyo.ynu.ac.jp",
+      "sources": [
+        "https://www.edu.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/",
+        "https://www.ynu.ac.jp/about/link/"
+      ],
+      "resolved_at": "2026-10-09T08:26:35.449187+00:00",
+      "dns_queries": [
+        {
+          "type": "A",
+          "status": "NOERROR",
+          "records": [
+            {
+              "name": "yokosyo.ynu.ac.jp",
+              "ttl": 3600,
+              "type": "A",
+              "value": "133.162.227.94"
+            }
+          ]
+        },
+        {
+          "type": "AAAA",
+          "status": "NOERROR",
+          "records": []
+        }
+      ],
+      "addresses": [
+        {
+          "ip": "133.162.227.94",
+          "family": 4,
+          "ttl": 3600,
+          "matched_cidrs": [],
+          "university_range_match": false,
+          "global": true
+        }
+      ],
+      "cnames": [],
+      "web_status": "public_web_link_candidate_not_http_probed"
+    }
+  ]
+}

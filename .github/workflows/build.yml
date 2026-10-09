@@ -1,0 +1,77 @@
+name: Test, build and prerelease
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-go@b7ad1dad31e06c5925ef5d2fc7ad053ef454303e # v7
+        with:
+          go-version: '1.27.2'
+          cache-dependency-path: go.sum
+      - name: Prepare verified Windows build assets
+        run: python3 tools/fetch_wintun.py
+      - name: Test
+        run: go test -race ./...
+      - name: Vet
+        run: |
+          go vet ./...
+          GOOS=windows GOARCH=amd64 go vet ./...
+      - name: Build all six targets and package notices
+        run: ./build.sh
+      - name: Check hashes and tracked source hygiene
+        run: |
+          (cd dist && sha256sum -c SHA256SUMS)
+          python3 tools/check_public_tree.py
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ynu-wg-build
+          if-no-files-found: error
+          retention-days: 14
+          path: |
+            dist/ynu-wg-*
+            dist/SHA256SUMS
+            dist/LICENSE
+            dist/README.md
+            dist/THIRD-PARTY-NOTICES.md
+            dist/WINTUN-LICENSE.txt
+            dist/licenses.zip
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: ynu-wg-build
+          path: dist
+      - name: Publish tagged build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          VERSION: ${{ github.ref_name }}
+        run: |
+          args=(--verify-tag --title "YNU-WG $VERSION" --notes-file docs/release-notes.md)
+          if [[ "$VERSION" == *-* ]]; then args+=(--prerelease); fi
+          gh release create "$VERSION" dist/ynu-wg-* dist/SHA256SUMS dist/LICENSE dist/THIRD-PARTY-NOTICES.md dist/WINTUN-LICENSE.txt dist/licenses.zip "${args[@]}"

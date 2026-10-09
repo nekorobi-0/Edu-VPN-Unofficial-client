@@ -1,0 +1,38 @@
+# User authentication, runtime state and private configuration
+*.kkm
+*.sim
+*.key
+*.pem
+*.p12
+*.pfx
+.env
+.env.*
+*.log
+*.lock
+**/profile*.json
+**/desktop.json
+**/startup-task.xml
+**/config.json
+/data/auth/
+/data/runtime/
+/runtime/
+# Generated drivers and build outputs
+*.dll
+*.exe
+*.msi
+*.cab
+*.zip
+*.tar.gz
+/dist/
+/bin/
+/data/jnic-*.txt
+# Analysis and original installers are never part of the repository
+/analysis/
+/launchers/
+/wireguard-go/
+/wireguard-tools/
+# Local tool files
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

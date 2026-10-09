@@ -1,0 +1,25 @@
+{
+  "dns_listen": "127.0.0.1:53",
+  "public_dns": "1.1.1.1:53",
+  "campus_dns": [
+    "133.34.4.251:53",
+    "133.34.4.58:53"
+  ],
+  "domains": [
+    "ac.jp"
+  ],
+  "campus_domains": [
+    "ynu.ac.jp"
+  ],
+  "nat64_prefix": "fd00:596e:7500::/96",
+  "interface": "auto",
+  "client_address": "fd00:596e:7501::2",
+  "mtu": 1280,
+  "auth_host": "vpn-stu.ynu.ac.jp:10000",
+  "idle_seconds": 5,
+  "auth_timeout_seconds": 60,
+  "retry_seconds": 5,
+  "ipv4_routes": [
+    "133.34.0.0/16"
+  ]
+}
