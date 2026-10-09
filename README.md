@@ -1,4 +1,4 @@
-# YNU-VPN-Unofficial-client
+# Edu-VPN-Unofficial-client
 
 横浜国立大学の学生向けVPNを利用する、非公式のGo製クライアントです。大学や公式VPN製品の開発元による提供・サポートはありません。大学から自分に発行されたSIM認証ファイル（`.kkm`）を使います。
 
