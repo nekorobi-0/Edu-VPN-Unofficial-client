@@ -15,6 +15,10 @@ Original project code and documentation are licensed under the MIT license in [L
 | github.com/wmnsk/milenage | `v1.2.1` | MIT | https://github.com/wmnsk/milenage |
 | Go standard library and runtime | build toolchain; CI uses Go 1.27.2 | BSD-3-Clause plus notices accompanying Go | https://go.dev/ |
 
+## Build-only resource generator
+
+The manifest generator under `tools/windowsmanifest/` uses `github.com/tc-hib/winres` v0.3.1 (0BSD, https://github.com/tc-hib/winres), `github.com/nfnt/resize` v0.0.0-20180221191011-83c6a9932646 (MIT, https://github.com/nfnt/resize), and `golang.org/x/image` v0.12.0 (BSD-3-Clause, https://go.googlesource.com/image/). These dependencies run only during builds; their code is not linked into the client executable. Their notices are preserved under `licenses/build-tools/`.
+
 ## Signed Wintun driver
 
 Windows executables embed the unmodified official signed Wintun 0.14.1 DLLs and use them through the Wintun API via the Go bindings. The signed binaries have their own [Prebuilt Binaries License](internal/assets/WINTUN-LICENSE.txt); they are not relicensed under this project's MIT license. The Wintun source-code GPL license is distinct from the prebuilt-binary license.

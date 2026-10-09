@@ -32,7 +32,7 @@ while remaining.strip():
     if not directory.is_dir():
         raise RuntimeError("dependency not downloaded: " + item["Path"])
     notices = [p for p in directory.iterdir() if p.is_file() and
-               p.name.upper().startswith(("LICENSE", "COPYING", "NOTICE", "AUTHORS", "COPYRIGHT"))]
+               p.name.upper().startswith(("LICENSE", "COPYING", "NOTICE", "AUTHORS", "COPYRIGHT", "PATENTS"))]
     if not any(p.name.upper().startswith(("LICENSE", "COPYING")) for p in notices):
         raise RuntimeError("no license located for " + item["Path"])
     destination = out / item["Path"].replace("/", "_")
@@ -49,6 +49,26 @@ go_notices.mkdir(exist_ok=True)
 for name in ('LICENSE', 'PATENTS', 'NOTICE'):
     if (goroot / name).is_file():
         shutil.copyfile(goroot / name, go_notices / name)
+# Preserve build-only resource generator dependencies separately.
+tool_packages = subprocess.run([go, 'list', '-deps', '-f', '{{if .Module}}{{.Module.Path}}{{end}}', '.'],
+                               cwd=root / 'tools/windowsmanifest', check=True,
+                               capture_output=True, text=True)
+tool_selected = set(tool_packages.stdout.splitlines())
+tool_result = subprocess.run([go, 'list', '-m', '-json', 'all'],
+                             cwd=root / 'tools/windowsmanifest', check=True,
+                             capture_output=True, text=True)
+tool_remaining = tool_result.stdout
+while tool_remaining.strip():
+    item, end = decoder.raw_decode(tool_remaining.lstrip())
+    tool_remaining = tool_remaining.lstrip()[end:]
+    if item.get('Main') or item['Path'] not in tool_selected:
+        continue
+    directory = Path(item['Dir'])
+    destination = out / 'build-tools' / item['Path'].replace('/', '_')
+    destination.mkdir(parents=True, exist_ok=True)
+    for path in directory.iterdir():
+        if path.is_file() and path.name.upper().startswith(('LICENSE', 'COPYING', 'NOTICE', 'AUTHORS', 'COPYRIGHT', 'PATENTS')):
+            shutil.copyfile(path, destination / path.name)
 repository_notices = root / 'licenses'
 if repository_notices.exists():
     shutil.rmtree(repository_notices)

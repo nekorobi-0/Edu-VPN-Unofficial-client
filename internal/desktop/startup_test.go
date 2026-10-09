@@ -27,6 +27,12 @@ func TestScheduledTaskPreservesPathsAndInteractiveElevation(t *testing.T) {
 	// encoding/xml consumes UTF-8; decode the file before checking task semantics.
 	decoded := strings.Replace(document, `encoding="UTF-16"`, `encoding="UTF-8"`, 1)
 	var task struct {
+		Triggers struct {
+			LogonTrigger []struct {
+				UserID string `xml:"UserId"`
+				Delay  string
+			}
+		}
 		Principals struct {
 			Principal struct {
 				UserID    string `xml:"UserId"`
@@ -52,8 +58,8 @@ func TestScheduledTaskPreservesPathsAndInteractiveElevation(t *testing.T) {
 	if task.Settings.ExecutionTimeLimit != "PT0S" || task.Settings.MultipleInstancesPolicy != "IgnoreNew" || task.Settings.DisallowStartIfOnBatteries != "false" {
 		t.Fatal("task must keep running and avoid duplicate instances")
 	}
-	if strings.Contains(document, "<Triggers>") {
-		t.Fatal("startup shortcut owns the trigger; avoid a second login trigger")
+	if len(task.Triggers.LogonTrigger) != 1 || task.Triggers.LogonTrigger[0].UserID != p.UserID || task.Triggers.LogonTrigger[0].Delay != "PT10S" {
+		t.Fatal("elevated startup must use one logon trigger restricted to the registering user")
 	}
 }
 func TestStatusUpdatesAreSafeDuringTrayReads(t *testing.T) {

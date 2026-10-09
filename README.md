@@ -8,13 +8,13 @@ WireGuard本体は変更せず、SIM認証、オンデマンド接続、DNS64、
 
 [Releases](https://github.com/nekorobi-0/YNU-VPN-Unofficial-client/releases)から自分のPCに合うEXEをダウンロードしてください。通常のIntel/AMD PCは `ynu-wg-windows-amd64.exe`、ARM版Windowsは `ynu-wg-windows-arm64.exe` です。公開前のビルド成果物は [Actions](https://github.com/nekorobi-0/YNU-VPN-Unofficial-client/actions) からも取得できます。
 
-1. EXEをダブルクリックし、WindowsのUACで管理者権限を許可します。
+1. EXEをダブルクリックし、WindowsのUACで管理者権限を許可します。EXEに `requireAdministrator` マニフェストを埋め込んでいるため、Windowsが起動前に直接確認します。
 2. ダウンロードフォルダ内から起動した場合、EXEは `%LOCALAPPDATA%\YNU-WG\bin\ynu-wg.exe` へ移動します。元のEXEは再起動後に削除します。
 3. 初回は起動時の作業フォルダから深さ3まで `.kkm` を探索します。見つかればそのまま使用し、ファイル選択は表示しません。
 4. 見つからなければ、[SIMダウンロードページ](https://vpn-stu.ynu.ac.jp:8443/)への案内とファイル選択を表示します。選んだファイルのパスを記憶します。SIM自体は移動・コピーしません。
 5. タスクトレイに常駐します。右クリックでステータス、ログ、スタートアップの有効・無効、終了を選べます。
 
-初回にスタートアップ・スタートメニューのショートカットを自動登録します。次回ログイン時は、登録した本人の対話セッション内で専用のタスクスケジューラタスクを起動します。
+初回にスタートメニューのショートカットと自動起動タスクを登録します。次回ログインの約10秒後に、登録した本人の対話セッション内で管理者権限のタスクから起動します。旧版のStartupフォルダのショートカットは、更新後の初回起動で自動移行します。
 
 DNS64はデフォルトで有効です。対象は `ac.jp`、大学の内部DNSを使う対象は `ynu.ac.jp`。対象ドメインのAレコードから合成IPv6を返し、仮想IF経由で大学VPNのIPv4へ中継します。大学IPv4レンジ `133.34.0.0/16` へのTCP/UDP転送も有効です。
 
@@ -57,7 +57,7 @@ sudo ./ynu-wg-linux-amd64 run --configure-dns
 sudo ./ynu-wg-darwin-arm64 run --configure-dns
 ```
 
-ファイルを明示する場合は `--auth /path/to/file.kkm` をサブコマンドより前に指定します。引数なしの起動はLinux/macOSではIP転送のみです。WindowsでDNSを設定せずにCLI実行する場合は `run --ip-only` を指定します。
+ファイルを明示する場合は `--auth /path/to/file.kkm` をサブコマンドより前に指定します。引数なしの起動はLinux/macOSではIP転送のみです。WindowsのCLI実行には管理者PowerShellを使用してください。DNSを設定せずにCLI実行する場合は `run --ip-only` を指定します。
 
 設定、認証プロトコル、DNSの挙動、サーバー上での構成、復旧時の注意点は [詳細ドキュメント](docs/architecture.ja.md) を参照してください。
 
@@ -74,7 +74,7 @@ go test -race ./...
 
 `build.sh` は公式のWintun 0.14.1 ZIPを取得し、固定SHA-256を検証した後に、Windows/Linux/macOS × amd64/arm64の6種類を `dist/` に作ります。Windows版はコンソールを出さないGUIサブシステムでビルドします。Goの依存関係は `go.mod` / `go.sum` で固定しています。
 
-Windows向けに直接 `go build` / `go vet` する前も、`python3 tools/fetch_wintun.py` でビルド用ドライバーを準備してください。Wintun DLLや生成したEXEはGitには登録しません。
+Windows向けに直接 `go build` / `go vet` する前も、`python3 tools/fetch_wintun.py` でビルド用ドライバーを準備してください。直接ビルドする場合は、あわせて `(cd tools/windowsmanifest && go run . -out ../../cmd/ynu-wg)` でマニフェストのリソースを生成します。`build.sh` では自動生成し、完成した両アーキテクチャのEXEからマニフェストを読み戻して検証します。Wintun DLL・リソースオブジェクト・生成したEXEはGitには登録しません。
 
 `data/ynu-web-ips.json` は公式ページの公開リンクから取得したDNSスナップショットです。IPアドレスは変化し、大学の全ホストを網羅するものではありません。`tools/ynu_dns.py` で照合・再取得できます。
 

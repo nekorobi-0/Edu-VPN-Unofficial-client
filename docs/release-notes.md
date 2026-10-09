@@ -1,5 +1,6 @@
 Windows/Linux/macOS × amd64/arm64の実験版です。利用方法と制約はリポジトリのREADME.mdを参照してください。
 
+- Windows EXEには `requireAdministrator` マニフェストを埋め込み、起動前にOSが管理者権限を要求します。自動起動は本人のログオン用管理者権限タスクへ移行します。
 - Windows: EXEのダブルクリックでDNS64有効・トレイ常駐。Downloadsからの自動移動、スタートアップ自動登録、SIM探索とファイル選択に対応。
 - Linux/macOS: CLI版。利用にはTUN/utun操作の管理者権限が必要です。ダウンロード後に `chmod +x ynu-wg-*` で実行権限を設定してください。
 - タスク登録用XMLはBOM付きUTF-16LE。Windowsの日本語コマンド出力の文字化けを修正しています。

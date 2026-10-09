@@ -7,6 +7,8 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
+	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/auth"
+	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/platform"
 	"golang.org/x/sys/windows"
 	"log"
 	"os"
@@ -17,8 +19,6 @@ import (
 	"syscall"
 	"time"
 	"unsafe"
-	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/auth"
-	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/platform"
 )
 
 //go:embed licenses.txt
@@ -84,6 +84,7 @@ type iconData struct {
 }
 type preferences struct {
 	StartupConfigured bool   `json:"startup_configured"`
+	StartupVersion    int    `json:"startup_version,omitempty"`
 	AuthFile          string `json:"auth_file,omitempty"`
 	AutoStart         bool   `json:"auto_start"`
 	Executable        string `json:"executable,omitempty"`
@@ -122,10 +123,6 @@ func open(hwnd uintptr, path, args string) error {
 // Launch owns the UI only for a no-argument Windows launch. CLI subcommands
 // remain available for scripts, including doctor and explicit IP-only mode.
 func Launch(run func(context.Context) error) bool {
-	if len(os.Args) == 2 && os.Args[1] == "--desktop-startup" {
-		startScheduledTask()
-		return true
-	}
 	source := ""
 	if len(os.Args) == 3 && os.Args[1] == "--desktop-source" {
 		source = os.Args[2]
@@ -146,14 +143,7 @@ func Launch(run func(context.Context) error) bool {
 		return true
 	}
 	if !windows.GetCurrentProcessToken().IsElevated() {
-		var args *uint16
-		if source != "" {
-			args = utf("--desktop-source " + syscall.EscapeArg(source))
-		}
-		e = windows.ShellExecute(0, utf("runas"), utf(exe), args, utf(cwd), 1)
-		if e != nil {
-			box(0, "起動には管理者権限が必要です。\n\n"+e.Error(), "YNU-WG", 0x10)
-		}
+		box(0, "管理者権限が必要です。管理者権限を要求するマニフェストを含む配布版EXEを使用してください。", "YNU-WG", 0x10)
 		return true
 	}
 	if source == "" {
@@ -335,7 +325,7 @@ func windowProc(hwnd uintptr, msg uint32, wparam, lparam uintptr) uintptr {
 }
 func (t *tray) begin() {
 
-	if !t.prefs.StartupConfigured || (t.prefs.AutoStart && (t.prefs.Executable != t.exe || t.prefs.WorkingDirectory != filepath.Dir(t.exe))) {
+	if !t.prefs.StartupConfigured || (t.prefs.AutoStart && (t.prefs.StartupVersion != 2 || t.prefs.Executable != t.exe || t.prefs.WorkingDirectory != filepath.Dir(t.exe))) {
 		if e := t.setStartup(true); e != nil {
 			log.Printf("startup registration failed: %v", e)
 			box(t.hwnd, e.Error(), "スタートアップ登録失敗", 0x10)
@@ -435,10 +425,11 @@ func (t *tray) setStartup(enable bool) error {
 	if e != nil {
 		return fmt.Errorf("スタートアップ設定: %s (%v)", platform.CommandOutput(out), e)
 	}
-	if e := t.startupShortcut(enable); e != nil {
+	if e := t.updateShortcuts(enable); e != nil {
 		return e
 	}
 	t.prefs.StartupConfigured = true
+	t.prefs.StartupVersion = 2
 	t.prefs.AutoStart = enable
 	t.prefs.Executable = t.exe
 	t.prefs.WorkingDirectory = filepath.Dir(t.exe)

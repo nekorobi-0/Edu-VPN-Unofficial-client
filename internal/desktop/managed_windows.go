@@ -5,6 +5,7 @@ import (
 	"crypto/sha256"
 	"errors"
 	"fmt"
+	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/platform"
 	"golang.org/x/sys/windows"
 	"os"
 	"os/exec"
@@ -14,7 +15,6 @@ import (
 	"time"
 	"unicode/utf16"
 	"unsafe"
-	"github.com/nekorobi-0/YNU-VPN-Unofficial-client/internal/platform"
 )
 
 func desktopDataDir() (string, error) {
@@ -74,27 +74,27 @@ func removeOriginalDownload(source, exe string) {
 		}
 	}
 }
-func (t *tray) startupShortcut(enable bool) error {
+func (t *tray) updateShortcuts(enable bool) error {
 	dir, e := windows.KnownFolderPath(windows.FOLDERID_Startup, 0)
 	if e != nil {
 		return e
 	}
 	path := filepath.Join(dir, "YNU-WG.lnk")
+	// Migrate the old Startup shortcut: launching a requireAdministrator EXE
+	// from that folder would prompt or be blocked. The task owns the logon trigger.
+	if e := os.Remove(path); e != nil && !errors.Is(e, os.ErrNotExist) {
+		return e
+	}
 	if !enable {
-		if e := os.Remove(path); e != nil && !errors.Is(e, os.ErrNotExist) {
-			return e
-		}
 		return nil
 	}
-	// The shortcut invokes the per-user interactive elevated task. No password,
-	// helper script, or console window is needed at subsequent logins.
 	psQuote := func(s string) string { return "'" + strings.ReplaceAll(s, "'", "''") + "'" }
 	programDir, e := windows.KnownFolderPath(windows.FOLDERID_Programs, 0)
 	if e != nil {
 		return e
 	}
 	programPath := filepath.Join(programDir, "YNU-WG.lnk")
-	script := "$w=New-Object -ComObject WScript.Shell; $s=$w.CreateShortcut(" + psQuote(path) + "); $s.TargetPath=" + psQuote(t.exe) + "; $s.Arguments='--desktop-startup'; $s.WorkingDirectory=" + psQuote(filepath.Dir(t.exe)) + "; $s.IconLocation=" + psQuote(t.exe+",0") + "; $s.Description='YNU-WG'; $s.Save(); $m=$w.CreateShortcut(" + psQuote(programPath) + "); $m.TargetPath=" + psQuote(t.exe) + "; $m.WorkingDirectory=" + psQuote(filepath.Dir(t.exe)) + "; $m.IconLocation=" + psQuote(t.exe+",0") + "; $m.Description='YNU-WG'; $m.Save()"
+	script := "$w=New-Object -ComObject WScript.Shell; $m=$w.CreateShortcut(" + psQuote(programPath) + "); $m.TargetPath=" + psQuote(t.exe) + "; $m.WorkingDirectory=" + psQuote(filepath.Dir(t.exe)) + "; $m.IconLocation=" + psQuote(t.exe+",0") + "; $m.Description='YNU-WG'; $m.Save()"
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 	cmd := exec.CommandContext(ctx, "powershell.exe", "-NoProfile", "-NonInteractive", "-Command", "$ErrorActionPreference='Stop'; "+script)
@@ -140,21 +140,4 @@ func pickSIM(owner uintptr, dir string) (string, error) {
 		return "", nil
 	}
 	return windows.UTF16ToString(buffer), nil
-}
-
-func startScheduledTask() {
-	user, e := windows.GetCurrentProcessToken().GetTokenUser()
-	if e != nil {
-		box(0, e.Error(), "YNU-WG", 0x10)
-		return
-	}
-	sum := sha256.Sum256([]byte(user.User.Sid.String()))
-	name := fmt.Sprintf("YNU-WG-%x", sum[:6])
-	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
-	defer cancel()
-	cmd := exec.CommandContext(ctx, "schtasks.exe", "/Run", "/TN", name)
-	cmd.SysProcAttr = &syscall.SysProcAttr{HideWindow: true}
-	if out, e := cmd.CombinedOutput(); e != nil {
-		box(0, fmt.Sprintf("スタートアップ起動に失敗しました。EXEを直接開いて登録し直してください。\n%s (%v)", platform.CommandOutput(out), e), "YNU-WG", 0x10)
-	}
 }

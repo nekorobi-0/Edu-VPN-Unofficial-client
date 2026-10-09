@@ -6,7 +6,7 @@ import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FORBIDDEN_SUFFIXES = {'.kkm', '.sim', '.key', '.pem', '.p12', '.pfx', '.log', '.dll',
-                      '.exe', '.msi', '.cab', '.zip', '.pcap', '.pcapng', '.dmp'}
+                      '.syso', '.exe', '.msi', '.cab', '.zip', '.pcap', '.pcapng', '.dmp'}
 FORBIDDEN_ROOTS = {'analysis', 'dist', 'bin', 'runtime', 'wireguard-go', 'wireguard-tools', 'launchers'}
 FORBIDDEN_NAMES = {'config.json', 'desktop.json', 'startup-task.xml', '.env', 'profile.json'}
 

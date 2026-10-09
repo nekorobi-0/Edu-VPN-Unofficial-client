@@ -4,6 +4,7 @@ cd "$(dirname "$0")"
 GO_BIN="${GO_BIN:-go}"
 python3 tools/fetch_wintun.py
 mkdir -p dist
+(cd tools/windowsmanifest && "$GO_BIN" run . -out ../../cmd/ynu-wg)
 GO_BIN="$GO_BIN" python3 tools/copy_licenses.py
 outputs=()
 for target in linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64 windows/arm64; do
@@ -16,6 +17,7 @@ for target in linux/amd64 linux/arm64 darwin/amd64 darwin/arm64 windows/amd64 wi
   outputs+=("$output")
   CGO_ENABLED=0 GOOS="$target_os" GOARCH="$target_arch" "$GO_BIN" build -trimpath -ldflags="$flags" -o "$output" ./cmd/ynu-wg
 done
+(cd tools/windowsmanifest && "$GO_BIN" run . -verify ../../dist/ynu-wg-windows-amd64.exe && "$GO_BIN" run . -verify ../../dist/ynu-wg-windows-arm64.exe)
 cp LICENSE README.md THIRD-PARTY-NOTICES.md dist/
 cp internal/assets/WINTUN-LICENSE.txt dist/WINTUN-LICENSE.txt
 python3 - <<'PY'
